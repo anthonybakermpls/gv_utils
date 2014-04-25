@@ -1,12 +1,11 @@
-
 CC = cc
-
 CCDBGFLAGS = -g -Weverything
 LIBS =
-OBJS = rd.o
+OBJS =
 
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
+	CC = gcc
     CCFLAGS += -D LINUX
     LIBS += -ldl
 endif
