@@ -6,28 +6,28 @@ OBJS =
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
 	CC = gcc
-    CCFLAGS += -D LINUX
-    LIBS += -ldl
+	CCFLAGS += -D LINUX
+	LIBS += -ldl
 endif
 ifeq ($(UNAME_S),Darwin)
-    CCFLAGS += -D OSX
+	CCFLAGS += -D OSX
 endif
 ifeq ($(UNAME_S),FreeBSD)
-    CCFLAGS += -D FREEBSD
+	CCFLAGS += -D FREEBSD
 endif
 ifeq ($(UNAME_S),SunOS)
-    CCFLAGS += -D solaris
+	CCFLAGS += -D solaris
 endif
 
 UNAME_P := $(shell uname -p)
 ifeq ($(UNAME_P),x86_64)
-    CCFLAGS += -D AMD64
+	CCFLAGS += -D AMD64
 endif
 ifneq ($(filter %86,$(UNAME_P)),)
-    CCFLAGS += -D IA32
+	CCFLAGS += -D IA32
 endif
 ifneq ($(filter arm%,$(UNAME_P)),)
-    CCFLAGS += -D ARM
+	CCFLAGS += -D ARM
 endif
 
 
