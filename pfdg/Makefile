@@ -1,5 +1,4 @@
 
-
 CC = cc
 
 CCDBGFLAGS = -g -Weverything
@@ -17,7 +16,7 @@ endif
 ifeq ($(UNAME_S),FreeBSD)
     CCFLAGS += -D FREEBSD
 endif
-ifeq ($(UNAME_S),solaris)
+ifeq ($(UNAME_S),SunOS)
     CCFLAGS += -D solaris
 endif
 
