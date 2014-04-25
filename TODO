@@ -9,3 +9,4 @@ pfdg
 - full system search
 - parse makefile
 - subgraph by dir
+- z coordinate by dir or other parameter
