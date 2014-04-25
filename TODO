@@ -3,6 +3,8 @@ dirmap
 - port
 
 pfdg
+- fix current dir node decl to subdir edge inconsistency
+  - node created due to being on edge not declared earlier having mangled name when has / in include directive path
 - full subdir search
 - full system search
 - parse makefile
