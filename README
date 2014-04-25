@@ -1,15 +1,16 @@
 gv_utils
 ========
-
 various programs and scripts for generating graph viz files
 
 
 
 
 
+dirmap
+----
+Show directory structure
 
 
 pfdg
 ----
-
-physical file dependency graph
+Physical file dependency graph
